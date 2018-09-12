@@ -1,0 +1,44 @@
+{
+	"name": "vineethkrishnan/visitlog",
+	"keywords": [
+		"laravel",
+		"log",
+		"visitor",
+		"ip"
+	],
+	"description": "Laravel package to log visitor information into database. Original author Sarfraz Ahmed (sarfraznawaz2005@gmail.com)",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Vineeth Krishnan",
+			"email": "vineethkrishnan007@gmail.com"
+		},
+		{
+			"name": "Sarfraz Ahmed",
+			"email": "sarfraznawaz2005@gmail.com"
+		}
+
+	],
+	"require": {
+		"php": ">=5.5.9",
+		"illuminate/support": "~5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vineethkrishnan\\VisitLog\\": "src/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Vineethkrishnan\\VisitLog\\VisitLogServiceProvider"
+			],
+			"aliases": {
+				"VisitLog": "Vineethkrishnan\\VisitLog\\Facades\\VisitLog"
+			}
+		}
+	},
+	"version": "1.1.1"
+}
